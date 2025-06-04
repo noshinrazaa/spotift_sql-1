@@ -74,6 +74,14 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 3. Get the total number of comments for tracks where `licensed = TRUE`.
 4. Find all tracks that belong to the album type `single`.
 5. Count the total number of tracks by each artist.
+```sql
+select
+artist,
+count(*) as total_no_songs
+from spotify
+group by artist
+```
+   
 
 ### Medium Level
 1. Calculate the average danceability of tracks in each album.
